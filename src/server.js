@@ -1,7 +1,7 @@
 import express from 'express' 
 const app = express()
 const PORT = 3001
-const routes = require('./routes/produto.routes.js')
+import routes from './routes/produto.routes.js'
 
 app.use('/api', routes)
 
