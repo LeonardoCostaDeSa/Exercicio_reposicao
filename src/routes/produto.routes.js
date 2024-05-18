@@ -1,9 +1,9 @@
-const {Router} = require('express')
-const {ProdutoController} = require('../controller/produto.controller.js')
+import {Router} from 'express'
+import {ProdutoController} from '../controller/produto.controller.js'
 
 const router = Router()
 
 router.get('/', ProdutoController.index)
 
-module.exports = router
+export default router
 

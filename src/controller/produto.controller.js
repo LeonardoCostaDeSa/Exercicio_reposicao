@@ -1,10 +1,9 @@
-const {Produto} = require ('../models/produto.models.js')
+import {Produto} from '../models/produto.models.js'
 
-class ProdutoController{
+export default class ProdutoController{
     static async index(req,res){
         const produto = await Produto.findMany()
         res.json(produto)
     }
 }
 
-module.exports = ProdutoController
